@@ -13,19 +13,18 @@
     <WidgetDetails class="widget__details--desktop-wrapper" />
     <div class="price">
       <div class="price__action--arrow" @click="handleShowDetails">
-        <i class="fa fa-chevron-up"></i>
+        <i class="icon fa fa-chevron-up"></i>
       </div>
       <div class="price__wrapper">
         <p class="price__wrapper--product-name">Leiguverð</p>
         <h2 class="price__wrapper--product-price">106.190 kr. /mán.</h2>
       </div>
-
       <div class="btn__wrapper">
         <span class="btn__wrapper--label">Áfram</span>
         <i class="icon fa fa-chevron-right"></i>
       </div>
     </div>
-    <div class="show__details" v-if="showDetails" style="top: 221px">
+    <div class="show__details" v-if="showDetails" style="top: 176px">
       <div class="circle" @click="handleShowDetails">
         <i class="fa fa-chevron-down"></i>
       </div>
@@ -45,7 +44,6 @@
     </div>
   </div>
 </template>
-
 <script>
 import WidgetDetails from "./WidgetDetails.vue";
 export default {
@@ -69,7 +67,6 @@ export default {
   },
 };
 </script>
-
 <style lang="scss" scoped>
 @import "~/assets/styles/main.scss";
 .widget {
@@ -81,7 +78,6 @@ export default {
   right: 0;
   top: 88px;
   bottom: 0;
-
   .content {
     height: 100%;
     overflow-y: auto;
@@ -90,16 +86,11 @@ export default {
       overflow: hidden;
       padding-bottom: 0;
     }
-
     &::-webkit-scrollbar {
       display: none;
     }
   }
-
   .header {
-    @include mobile {
-      @apply flex items-center justify-between;
-    }
     .widget__title {
       font-weight: bold;
       font-size: 16px;
@@ -122,17 +113,20 @@ export default {
       }
     }
     .widget__img {
-      width: 68%;
-      height: 35%;
-      margin: auto;
+      width: 70%;
       margin-top: 16px;
+      margin-left: 32px;
       @include mobile {
         height: auto;
         width: 179px;
+        margin-right: 20px;
+        margin-left: 0;
       }
     }
+    @include mobile {
+      @apply flex items-center justify-between;
+    }
   }
-
   .price {
     width: 100%;
     height: 123px;
@@ -145,7 +139,6 @@ export default {
       position: fixed;
       height: 80px;
     }
-
     @apply flex items-center
       justify-between pr-4;
     .price__wrapper {
@@ -154,6 +147,11 @@ export default {
         font-size: 16px;
         line-height: 120%;
         color: $gray3;
+        padding-bottom: 4px;
+        @include mobile {
+          font-size: 14px;
+          padding-bottom: 0;
+        }
       }
       .price__wrapper--product-price {
         font-weight: bold;
@@ -161,13 +159,19 @@ export default {
         line-height: 120%;
         letter-spacing: -2px;
         color: $dark-blue;
+        @include mobile {
+          font-size: 18px;
+          line-height: 135%;
+        }
       }
     }
     .price__action--arrow {
       top: -11px;
       background: $light-blue;
       @apply cursor-pointer absolute flex justify-center items-center opacity-0 w-6 h-6 rounded-3xl;
-
+      .icon {
+        color: $gray3;
+      }
       @include mobile {
         @apply opacity-100;
       }
@@ -181,10 +185,9 @@ export default {
       border-radius: 4px;
       padding: 8px 16px 8px 24px;
       cursor: pointer;
-      .label {
+      .btn__wrapper--label {
         font-weight: bold;
         font-size: 16px;
-        line-height: 100%;
         letter-spacing: 0.1px;
         margin-right: 12px;
       }
@@ -220,9 +223,7 @@ export default {
       margin-left: 0;
       margin-right: 0;
     }
-
     @apply px-8 py-4 absolute inset-0;
-
     .circle {
       width: 26px;
       height: 26px;
@@ -243,7 +244,6 @@ export default {
     position: inherit;
     padding-top: 0;
     height: 128px;
-
     .widget__details--desktop-wrapper {
       // display: none;
     }

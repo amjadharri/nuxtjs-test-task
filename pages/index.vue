@@ -7,7 +7,6 @@
     </div>
   </div>
 </template>
-
 <script>
 import AppNavbar from "../components/AppNavbar.vue";
 export default {
@@ -15,7 +14,6 @@ export default {
   name: "IndexPage",
 };
 </script>
-
 <style lang="scss">
 @import "~/assets/styles/main.scss";
 .home-page {

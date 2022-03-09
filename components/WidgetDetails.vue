@@ -42,7 +42,6 @@
     </div>
   </div>
 </template>
-
 <script>
 export default {
   name: "WidgetDetails",
@@ -70,7 +69,6 @@ export default {
   },
 };
 </script>
-
 <style lang="scss" scoped>
 @import "~/assets/styles/main.scss";
 .widget__details {

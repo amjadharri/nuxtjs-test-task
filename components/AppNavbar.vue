@@ -22,7 +22,6 @@
     ></i>
   </div>
 </template>
-
 <script>
 export default {
   name: "AppNavbar",
@@ -39,10 +38,8 @@ export default {
   },
 };
 </script>
-
 <style lang="scss">
 @import "~/assets/styles/main.scss";
-
 .navbar {
   background-color: #5c5c5c;
   height: 88px;
@@ -64,6 +61,7 @@ export default {
     font-weight: 700;
     @include mobile {
       padding-left: 20px;
+      font-size: 16px;
     }
     @include tablet {
       font-size: 26px;
@@ -76,7 +74,6 @@ export default {
     padding-right: 96px;
     @include mobile {
       display: none;
-
       &.collapse-menu {
         background: $dark-blue;
         display: block;
@@ -85,7 +82,6 @@ export default {
         right: 0;
         top: 88px;
         padding: 0px 20px 12px 4px;
-
         .navbar__items--item {
           margin-left: 0;
           padding: 8px 8px 8px 16px;
@@ -121,14 +117,14 @@ export default {
     margin-right: 20px;
     color: $white;
     cursor: pointer;
-
     @include mobile {
       display: block;
+      font-size: 24px;
     }
   }
-
   @include mobile {
     background: $dark-blue;
+    height: 48px;
   }
 }
 </style>

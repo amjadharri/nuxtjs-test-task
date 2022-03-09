@@ -55,7 +55,6 @@
     </div>
   </div>
 </template>
-
 <script>
 export default {
   name: "BodyWrapper",
@@ -159,25 +158,21 @@ export default {
   width: 65%;
   height: 100%;
   background-color: $gray2;
-  padding: 0 34px;
+  padding: 0 0 0 34px;
   .tags {
     overflow-x: hidden;
     padding: 16px 14px;
     @apply flex  items-center mt-3 relative;
-
     .tags__tag {
       position: relative;
       margin-right: 56px;
       &:first-child {
         background: $light-blue;
-
         @apply py-0 px-4 rounded;
         .tag__label {
           color: $dark-blue;
-          font-weight: bold;
         }
       }
-
       &::after {
         content: "";
         background: $light-green;
@@ -189,6 +184,7 @@ export default {
       .tag__label {
         font-size: 14px;
         color: $gray4;
+        font-weight: bold;
         @apply capitalize;
       }
     }
@@ -206,7 +202,7 @@ export default {
       background: $gray5;
       padding-left: 45%;
       position: sticky;
-      top: 88px;
+      top: 48px;
       z-index: 1;
       margin-top: 0;
     }
@@ -224,26 +220,30 @@ export default {
   .product__details {
     padding: 20px 0 0px 16px;
     background: $white;
-    @apply mr-8 mt-11 rounded-lg;
-
+    margin-right: 34px;
+    @apply rounded-lg mb-6;
     .product__details--type {
-      font-size: 20px;
-      line-height: 120%;
-      color: $dark-blue;
       border-bottom: 1px solid $light-blue;
+      color: $dark-blue;
       @apply flex justify-between items-center pr-4 font-bold pb-5;
+      .type {
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 120%;
+      }
+      .more {
+        padding-right: 21px;
+        font-size: 16px;
+      }
     }
-
     .table__details {
       .table__details--row {
         border-bottom: 1px solid $light-blue;
         @include mobile {
           padding-right: 0;
         }
-
         &.click-active {
           background: $dark-blue;
-
           .table__row {
             .table__data {
               .table__data--key,
@@ -252,7 +252,6 @@ export default {
               }
             }
           }
-
           .circle__wrapper {
             .circle {
               &::before {
@@ -280,22 +279,22 @@ export default {
           @apply flex flex-wrap justify-between ml-4 w-full;
           .table__data {
             @apply flex flex-col my-1;
-
             .table__data--key {
               font-size: 14px;
               font-weight: bold;
+              line-height: 115%;
               color: $dark-blue;
+              padding-bottom: 4px;
             }
             .table__data--value {
               font-size: 14px;
               font-weight: normal;
+              line-height: 115%;
               color: $dark-blue;
             }
           }
-
           @include mobile {
             @apply justify-start;
-
             .table__data {
               @apply mr-4;
             }
@@ -311,9 +310,15 @@ export default {
     padding: 0;
     .product__details {
       margin: 0 0px 20px 0;
-      padding: 20px 16px 0px 16px;
+      padding: 20px 0 0px 16px;
       .product__details--type {
         padding: 20px 40px 20px 16px;
+        .type {
+          font-size: 18px;
+        }
+        .more {
+          padding-right: 0;
+        }
       }
     }
     .type__title {
