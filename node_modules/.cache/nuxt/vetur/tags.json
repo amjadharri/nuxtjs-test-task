@@ -1,0 +1,17 @@
+{
+  "AppNavbar": {
+    "description": "Auto imported from components/AppNavbar.vue"
+  },
+  "BodyWrapper": {
+    "description": "Auto imported from components/BodyWrapper.vue"
+  },
+  "NuxtLogo": {
+    "description": "Auto imported from components/NuxtLogo.vue"
+  },
+  "Widget": {
+    "description": "Auto imported from components/Widget.vue"
+  },
+  "WidgetDetails": {
+    "description": "Auto imported from components/WidgetDetails.vue"
+  }
+}

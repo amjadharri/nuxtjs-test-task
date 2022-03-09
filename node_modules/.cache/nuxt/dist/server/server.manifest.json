@@ -1,0 +1,21 @@
+{
+  "entry": "server.js",
+  "files": {
+    "components/app-navbar.js": "components/app-navbar.js",
+    "components/body-wrapper.js": "components/body-wrapper.js",
+    "components/nuxt-logo.js": "components/nuxt-logo.js",
+    "components/widget-details.js": "components/widget-details.js",
+    "components/widget.js": "components/widget.js",
+    "pages/index.js": "pages/index.js",
+    "server.js": "server.js"
+  },
+  "maps": {
+    "components/app-navbar.js": "components/app-navbar.js.map",
+    "components/body-wrapper.js": "components/body-wrapper.js.map",
+    "components/nuxt-logo.js": "components/nuxt-logo.js.map",
+    "components/widget-details.js": "components/widget-details.js.map",
+    "components/widget.js": "components/widget.js.map",
+    "pages/index.js": "pages/index.js.map",
+    "server.js": "server.js.map"
+  }
+}

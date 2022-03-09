@@ -1,0 +1,24 @@
+html,
+body {
+  height: 100%;
+  background-color: #e5e5e5;
+}
+
+@font-face {
+  font-family: "GT America";
+  src: url("~assets/GT-America/GT-America-Standard-Ultra-Light-Trial.otf")
+      format("otf"),
+    url("~assets/GT-America/GT-America-Standard-Light-Trial.otf") format("otf"),
+    url("~assets/GT-America/GT-America-Standard-Thin-Trial.otf") format("otf"),
+    url("~/assets/GT-America/GT-America-Standard-Regular-Trial.otf")
+      format("otf"),
+    url("~/assets/GT-America/GT-America-Standard-Medium-Trial.otf")
+      format("otf"),
+    url("~assets/GT-America/GT-America-Standard-Bold-Trial.otf") format("otf"),
+    url("~/assets/GT-America/GT-America-Standard-Black-Trial.otf") format("otf");
+}
+
+@font-face {
+  font-family: "Roboto", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+}
